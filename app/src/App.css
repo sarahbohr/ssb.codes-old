@@ -1,28 +1,43 @@
-.App {
+header {
+  height: 4em;
+  background: #845;
+}
+
+.parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1 {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: .2em;
   color: white;
+  background: rgba(45, 46, 47, 0.43);
+  padding: 10rem 0;
+  mix-blend-mode: exclusion;
 }
 
-.App-title {
-  font-size: 1.5em;
+.parallax:nth-of-type(1) {
+  background: url(http://www.devstreak.com/wp-content/uploads/2016/01/Parallax-Scrolling-CodePen-Background.jpg);
 }
 
-.App-intro {
-  font-size: large;
+.parallax:nth-of-type(1) h1 {
+  padding: 15rem 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.parallax:nth-of-type(2) {
+  background: url( http://www.devstreak.com/wp-content/uploads/2016/01/Parallax-Scrolling-CodePen-Background.jpg);
+}
+.parallax:nth-of-type(2) h1 {
+  padding: 12rem 0;
+}
+
+.parallax:nth-of-type(3) {
+  background: url( http://www.devstreak.com/wp-content/uploads/2016/01/Parallax-Scrolling-CodePen-Background.jpg);
+}
+
+.parallax:nth-of-type(4) {
+  background: url( http://www.devstreak.com/wp-content/uploads/2016/01/Parallax-Scrolling-CodePen-Background.jpg);
 }
