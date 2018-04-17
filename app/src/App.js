@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
+import Header from './Header'
+import Intro from './Intro'
 
 class App extends Component {
 
@@ -24,18 +26,15 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>
-        </header>
-        <section class="parallax">
-          <h1>LET'S DO IT</h1>
-        </section>
-        <section class="parallax">
+        <Header />
+        <Intro />
+        <section className="parallax">
           <h1>LET'S GET IT DONE!</h1>
         </section>
-        <section class="parallax">
+        <section className="parallax">
           <h1>LET'S GET IT DONE!</h1>
         </section>
-        <section class="parallax">
+        <section className="parallax">
           <h1>LET'S GET IT DONE!</h1>
         </section>
       </div>
