@@ -8,10 +8,24 @@
 #11233e yankees blue
 */
 
-html, body {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
   scroll-behavior: smooth;
+  position: relative;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: auto;
 }
 
 .navbar {
@@ -136,61 +150,79 @@ html, body {
 }
 
 #about {
-  padding: 15vh 0;
+  background: url('/img/poly_bg.jpg') no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#about img {
+#about .container {
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(169, 169, 169, .9);
+  padding: 12vh 10vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#about img#self {
   width: 100%;
-  max-width: 50vw;
+  border: 2px solid #8fb9a1;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
-#about > .container > .row > .text-left > h2,
-#about > .container > .row > .text-right > h2 {
+#about > .container > .row > .text-left > h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: calc(1.3vw + 1.3vh + .85vmin);
   color: #4a7482;
 }
 
-#projects {
-  padding: 3vh 0;
-}
-
-#projects > .container > h2 {
+#about > .container > .row > .text-left > h2,
+#about > .container > .row > .text-right > h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4vw;
-  color: #666;
-  mix-blend-mode: difference;
-  text-transform: lowercase;
-  margin-bottom: 3vh;
+  font-size: calc(1vw + 1vh + .85vmin);
+  color: #4a7482;
 }
 
-#services {
-  background-color: #306d9f;
-  color: #ffffff;
+#about p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(.75vw + .75vh + .25vmin);
 }
 
-#services .glyphicon {
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 60px;
-  height: 140px;
-  line-height: 140px;
-  text-align: center;
-  vertical-align: middle;
-  width: 140px;
+#about .mission {
+  margin: 3vh 0 0 0;
 }
 
-#projects {
-  background: url('/img/flowers.jpg') no-repeat center center fixed;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  background-size: cover;
+.socmed img {
+  min-width: 2vw;
+  max-width: 3vw;
 }
 
 #projects .panel {
   opacity: 0.85;
+}
+
+#projects {
+  background: url('/img/flowers.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+#projects .container {
+  margin: 0px auto;
+  padding: 5vh 0;
+}
+
+#projects h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(3vw + 3vh + .75vmin);
+  color: #666;
+  mix-blend-mode: difference;
+  text-transform: lowercase;
+  margin: 5vh 0 0 3vw;
 }
 
 .card > .card-body > h5 {
@@ -199,16 +231,59 @@ html, body {
   color: #4a7482;
 }
 
-#google_map {
-  height: 500px;
+#tech {
+  background-color: #4a7482;
+  color: #ffffff;
 }
+
+#tech h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(1.5vw + 1.5vh + .75vmin);
+  color: #ccc;
+  padding: 3vh 0 0 3vw;
+}
+
+#tech .container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#tech .faicons {
+  color: #8fb9a1;
+  margin: 2vw;
+}
+
+#tech .faicons:hover {
+  color: #ccc;
+}
+
+#invol {
+  background: url('/img/stars.jpg') no-repeat center center fixed;
+  height: 75vh;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+#invol h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(2vw + 2vh + .75vmin);
+  color: #ccc;
+  text-transform: lowercase;
+  text-shadow: 3px 3px 5px #000;
+  padding: 3vh 0 0 3vw;
+}
+
+#invol h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(1vw + 1vh + .75vmin);
+  color: #ccc;
+  text-transform: lowercase;
+  text-shadow: 3px 3px 5px #000;
+  padding: 0 0 0 3vw;
+}
+
 footer {
   padding: 20px 0;
-}
-footer .glyphicon {
-  color: #333333;
-  font-size: 60px;
-}
-footer .glyphicon:hover {
-  color: #306d9f;
 }
