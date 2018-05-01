@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+#projects {
+  background-image: url('assets/img/flowers.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#projects-text {
+  padding: 30vh 20vh;
+}
+
+#projects-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 5vw;
+  color: #fff;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  mix-blend-mode: exclusion;
+}
+
+#projects-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  color: #ccc;
+  letter-spacing: 1vw;
+  text-shadow: 3px 3px 4px hsl(0, 0, 0);
+}
+
+#projects-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  color: #ccc;
+  letter-spacing: .5vw;
+  text-shadow: 2px 2px 8px hsl(0, 0, 0);
+}
