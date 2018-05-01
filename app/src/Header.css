@@ -10,10 +10,15 @@
 
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2vmax;
+  font-size: 2.5vmax;
+  color: #ccc;
   margin-left: 2vw;
   display: flex;
   flex-direction: row;
+}
+
+.navbar-brand:hover {
+ color: #8fb9a1;
 }
 
 #giraffe {
@@ -39,15 +44,13 @@
 }
 
 .nav > li > a.nav-link:hover {
-  color: #b5d3af;
-  border-bottom: 1px solid #ccc;
+  color: #ccc;
+  border-bottom: 2px solid #b5d3af;
   padding: 0;
 }
 
 .nav > li > .nav-link:active {
   color: #fff;
-  background-color: #4a7482;
-  width: 3vw;
-  height: 5vh;
+  border-bottom: 1px solid #ccc;
   padding: 0;
 }

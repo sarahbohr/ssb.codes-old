@@ -1,16 +1,40 @@
-.parallax {
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+#intro {
   background-image: url('assets/img/poly_bg.jpg');
   height: 100vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#intro h1 {
+#intro-text {
+  padding: 30vh 20vh;
+}
+
+#intro-text h1 {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin: 0;
-  font-size: 2.5em;
-  color: #ccc;
-  background: rgba(45, 46, 47, 0.43);
-  padding: 10rem 0;
+  font-size: 5vw;
+  color: #fff;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
   mix-blend-mode: exclusion;
+}
+
+#intro-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  color: #ccc;
+  letter-spacing: 1vw;
+  text-shadow: 3px 3px 4px hsl(0, 0, 0);
+}
+
+#intro-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  color: #ccc;
+  letter-spacing: .5vw;
+  text-shadow: 2px 2px 8px hsl(0, 0, 0);
 }
