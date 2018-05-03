@@ -17,9 +17,10 @@
 </head>
 
 <body data-spy="scroll" data-target="navscroll" data-offset="0">
+	<div id="top"></div>
 
 	<nav class="navbar fixed-top navbar-expand-lg" id="navscroll">
-		<a class="navbar-brand" href="/"><div id="giraffe">&nbsp;</div> Sarah S. Bohr</a>
+		<a class="navbar-brand" href="#top"><div id="giraffe">&nbsp;</div> Sarah S. Bohr</a>
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTog" aria-controls="navbarTog" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -83,7 +84,6 @@
 					<div class="col-sm-6 text-right">
 							<h2>Mission Statement 2018</h2>
 							<p class="lead">To find a career with a socially conscious company who I feel great about working for.</p>
-					
 				</div>
 				</div>
     </div>
@@ -161,9 +161,9 @@
 		<i class="fab fa-npm fa-5x faicons" data-toggle="tooltip" data-placement="top" title="NPM"></i>
 		<i class="fab fa-git faicons fa-5x" data-toggle="tooltip" data-placement="top" title="Git"></i>
 		<i class="fab fa-github-alt fa-5x faicons" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
-		<i class="fab fa-aws fa-5x faicons" data-toggle="tooltip" data-placement="top" title="AWS"></i>
+		<i class="fab fa-aws fa-5x faicons" data-toggle="tooltip" data-placement="top" title="Amazon Web Services"></i>
 		<i class="fab fa-node-js fa-5x faicons" data-toggle="tooltip" data-placement="top" title="Node.js"></i>
-		<a href="http://piedpiper.com/" target="_blank"><i class="fab fa-pied-piper fa-5x faicons" data-toggle="tooltip" data-placement="top" title="Pipernet"></i></a>
+		<a href="http://piedpiper.com/" target="_blank"><i class="fab fa-pied-piper fa-5x faicons" data-toggle="tooltip" data-placement="top" title="not a hot dog"></i></a>
 		<i class="fab fa-wordpress fa-5x faicons" data-toggle="tooltip" data-placement="top" title="WordPress"></i>
 		<i class="fab fa-python fa-5x faicons" data-toggle="tooltip" data-placement="top" title="Python"></i>
     </div>
@@ -182,6 +182,9 @@
 		<div class="container">
 				<div class="row">
 					<div class="col">
+
+					</div>
+					<div class="col">
 							<div class="socmed">
 									<a href="//github.com/sarahbohr" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
 									<a href="//linkedin.com/in/ssbcodes" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
@@ -189,35 +192,55 @@
 									<a href="//twitter.com/ssbcodes" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
 									<a href="//instagram.com/ssbcodes" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
 								</div>
-					</div>
-					<div class="col">
-							<form>
-								<div class="form-group">
-									<input type="text" class="form-control" id="first-last-name" placeholder="Name">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="comm" placeholder="Email or Twitter">
+							</div>
+							<div class="row">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Twitter">
 								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="comm" placeholder="Email or Twitter">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Facebook">
 								</div>
-									<div class="form-group">
-										<label for="message">Message</label>
-										<textarea class="form-control" id="message" rows="3"></textarea>
-									</div>
-								<button type="submit" class="btn">Send</button>
-							</form>
+							</div>
+								<div class="form-group">
+									<label for="message"></label>
+									<textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+								</div>
+							<button type="submit" class="btn">Send</button>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-
+</div>
 <footer>
-  <div class="container">
-    <p class="text-left">Copyright &copy; <script type="text/javascript">
-			document.write(new Date().getFullYear());</script> Sarah S. Bohr</p>
-  </div>
+	<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<p class="text-left">Copyright &copy; <script type="text/javascript">
+						document.write(new Date().getFullYear());</script> Sarah S. Bohr</p>
+						<p>ssb.codes and its <a href="https://github.com/sarahbohr/ssb.codes" target="_blank"> source code</a> are distributed under the <a href="https://github.com/sarahbohr/ssb.codes/blob/master/LICENSE" target="_blank">MIT License</a></p>
+				</div>
+				<div class="col-sm footer-tech">
+					This website is built with<br />
+					<i class="fab fa-react fa-2x faicons" data-toggle="tooltip" data-placement="top" title="React 16"></i>
+					<i class="fab fa-js fa-2x faicons" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
+					<i class="fab fa-html5 fa-2x faicons" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
+					<i class="fab fa-css3 fa-2x faicons" data-toggle="tooltip" data-placement="top" title="CSS3"></i>
+					<i class="fab fa-aws fa-2x faicons" data-toggle="tooltip" data-placement="top" title="AWS"></i>
+				</div>
+				<div class="col-sm">
+					<p>With endless thanks to:</p>
+					<p>My instructors at Galvanize; my support network of family, friends, and cohort; and most important of all the love of my life Matthew. I wouldn't be here without all of you.</p>
+				</div>
+			</div>
+		</div>
 </footer>
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
