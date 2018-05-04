@@ -41,4 +41,3 @@ Thumbs.db
 *.sh
 *-workspace
 /app*
-*/node_modules/*
