@@ -38,6 +38,6 @@ Thumbs.db
 
 # Site specific files #
 #######################
-publish.sh
-ssbcodes.code-workspace
+*.sh
+*-workspace
 /app*
