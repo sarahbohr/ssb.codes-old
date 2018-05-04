@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 window.onscroll = () => { scrollFunction() }
 
 const scrollFunction = () => {

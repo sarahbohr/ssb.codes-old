@@ -14,17 +14,21 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet" />
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(() => {
+				emailjs.init("user_ld15gCR4lqP9KeZVnfGpC")
+		})()
+	</script>
 </head>
 
 <body data-spy="scroll" data-target="navscroll" data-offset="0">
 	<div id="top"></div>
-
 	<nav class="navbar fixed-top navbar-expand-lg" id="navscroll">
 		<a class="navbar-brand" href="#top"><div id="giraffe">&nbsp;</div> Sarah S. Bohr</a>
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTog" aria-controls="navbarTog" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 		<div class="collapse navbar-collapse justify-content-end" id="navbarTog">
 				<ul class="nav justify-content-end">
 						<li class="nav-item">
@@ -45,7 +49,6 @@
 					</ul>
 		</div>
 	</nav>
-
 <div id="home" class="home">
   <div class="intro">
     <h1>Sarah S. Bohr</h1>
@@ -71,6 +74,7 @@
 									<a href="//facebook.com/ssbcodes" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
 									<a href="//twitter.com/ssbcodes" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
 									<a href="//instagram.com/ssbcodes" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+									<a href="#contact"><i class="fas fa-envelope-square fa-3x"></i></a>
 								</div>
 					</div>
 		</div>
@@ -112,7 +116,7 @@
 									<img class="card-img-top" src="/img/tinyweather-screenshot.png" alt="TinyWeather screenshot">
 									<div class="card-body">
 										<h5 class="card-title">TinyWeather</h5>
-										<p class="card-text">Look up temperature by city, build with Node.js and Express.</p>
+										<p class="card-text">Look up temperature by city, built with Node.js and Express.</p>
 									</div>
 									<div class="card-body">
 										<a href="https://github.com/sarahbohr/tinyweather" target="_blank"><i class="fas fa-external-link-alt fa-2x"></i></a>
@@ -134,14 +138,14 @@
 							</div>
 							<div class="panel panel-default">
 									<div class="card">
-											<img class="card-img-top" src="http://via.placeholder.com/200x100" alt="Card image cap">
+											<img class="card-img-top" src="/img/gocode-screenshot.png" alt="Go Code screenshot">
 											<div class="card-body">
-												<h5 class="card-title">Card title</h5>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<h5 class="card-title">GiveMatch</h5>
+												<p class="card-text">A project proposal and front end created in less than 48 hours for the 2018 Go Code Colorado competition.</p>
 											</div>
 											
 											<div class="card-body">
-												<a href="#"><i class="fas fa-external-link-alt fa-2x"></i></a>
+												<a href="http://ssbgocode.surge.sh/" target="_blank"><i class="fas fa-external-link-alt fa-2x"></i></a>
 											</div>
 										</div>
 								</div>
@@ -152,8 +156,12 @@
 <div id="tech">
 	<h2>technologies</h2>
   <div class="container">
-		<a href="https://reactjs.org/" target="_blank"><i class="fab fa-react fa-5x faicons" data-toggle="tooltip" data-placement="top" title="React 16"></i></a>
-		<a href="https://vuejs.org/" target="_blank"><i class="fab fa-vuejs fa-5x faicons" data-toggle="tooltip" data-placement="top" title="Vue.js 2"></i></a>
+		<!-- <a href="https://reactjs.org/" target="_blank"> -->
+			<i class="fab fa-react fa-5x faicons" data-toggle="tooltip" data-placement="top" title="React 16"></i>
+		<!-- </a> -->
+		<!-- <a href="https://vuejs.org/" target="_blank"> -->
+			<i class="fab fa-vuejs fa-5x faicons" data-toggle="tooltip" data-placement="top" title="Vue.js 2"></i>
+		<!-- </a> -->
 		<i class="fab fa-js fa-5x faicons" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
 		<i class="fab fa-html5 fa-5x faicons" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
 		<i class="fab fa-css3 fa-5x faicons" data-toggle="tooltip" data-placement="top" title="CSS3"></i>
@@ -174,6 +182,30 @@
   <div class="container">
         <h2>Involvement</h2>
 				<h4>Organizations I'm proud to work with</h4>
+			<div class="org-container">
+
+				<div class="row">
+					<div class="col col-sm-4">
+						<div class="org-img">
+							<img src="/img/gocode.png" />
+						</div>
+					</div>
+					<div class="col col-sm-8">
+						<div class="org-text">
+							<p>Go Code Colorado is an annual competition that challenges multidisciplinary teams to turn public data into useful business insights and tools. Go Code Colorado is the first and only statewide effort of its kind. Since its inception in 2014, hundreds of software developers, data scientists, designers, business and marketing professionals, entrepreneurs, big thinkers, and general doers have competed in Go Code Colorado.</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<a class="btn btn-secondary" href="http://ssbgocode.surge.sh/" target="_blank">See my project demo page</a>
+								</div>
+								<div class="col-sm-4">
+									<a class="btn btn-secondary" href="http://gocode.colorado.gov/" target="_blank">GoCode Colorado</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
   </div>
 </div>
 
@@ -181,10 +213,10 @@
 	<h2>contact</h2>
 		<div class="container">
 				<div class="row">
-					<div class="col">
+					<div class="col-sm-7">
 
 					</div>
-					<div class="col">
+					<div class="col-sm-5">
 							<div class="socmed">
 									<a href="//github.com/sarahbohr" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
 									<a href="//linkedin.com/in/ssbcodes" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
@@ -192,24 +224,16 @@
 									<a href="//twitter.com/ssbcodes" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
 									<a href="//instagram.com/ssbcodes" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
 								</div>
-						<form>
+						<form id="contact-form">
+							<input type="hidden" name="contact_number">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" placeholder="Name">
+								<input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="comm" placeholder="Email or Twitter">
-							</div>
-							<div class="row">
-								<div class="col">
-									<input type="text" class="form-control" placeholder="Twitter">
-								</div>
-								<div class="col">
-									<input type="text" class="form-control" placeholder="Facebook">
-								</div>
+								<input type="text" class="form-control" id="user-email" name="user-email" placeholder="Email">
 							</div>
 								<div class="form-group">
-									<label for="message"></label>
-									<textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+									<textarea class="form-control" id="message" rows="3" name="contact" placeholder="Message"></textarea>
 								</div>
 							<button type="submit" class="btn">Send</button>
 						</form>
