@@ -1,2 +1,2 @@
 # ssb.codes
-Personal/portfolio site for Sarah Battey, a full stack web dev in Denver, Colorado
+Personal/portfolio site for Sarah Bohr, a full stack web dev in Denver, Colorado
