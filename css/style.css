@@ -283,7 +283,7 @@ padding: 0;
 #tech .container {
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
+  padding: 3vh 0 0 3vw;
 }
 
 #tech .faicons {
@@ -297,11 +297,30 @@ padding: 0;
 
 #invol {
   background: url('/img/stars.jpg') no-repeat center center fixed;
-  height: 75vh;
+  height: 160vh;
   position: relative;
   width: 100%;
   background-size: cover;
   padding-top: 7vh;
+}
+
+#invol .org-container {
+  background: rgba(211, 211, 211, 0.6);
+  width: 100%;
+  margin: 3vh 0 0 5vw;
+  border-radius: 25px;
+}
+
+#invol .org-container .col {
+  padding: 3vh;
+  margin: auto;
+}
+
+#invol .org-img img {
+  width: 100%;
+  min-width: 10vw;
+  margin-left: 2vw;
+  border: 2px solid #4a7482;
 }
 
 #invol h2 {
@@ -322,28 +341,12 @@ padding: 0;
   padding: 0 0 0 3vw;
 }
 
-#invol .org-container {
-  background: rgba(211, 211, 211, 0.6);
-  width: 100%;
-  margin: 3vh 0 0 5vw;
+#invol h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(1vw + 1vh + .75vmin);
+  color: #11233e;
+  /* padding: 0 0 0 3vw; */
 }
-
-#invol .org-container .col {
-  padding: 5vh;
-}
-
-#invol .org-img img {
-  width: 100%;
-  min-width: 10vw;
-}
-
-/* #invol .org-container .col-left {
-  padding: 3vh 3vw;
-}
-
-#invol .org-container .col-right {
-  padding: 3vh 3vw;
-} */
 
 #invol .org-container p {
   font-family: 'Open Sans', sans-serif;
